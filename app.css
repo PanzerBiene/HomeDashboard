@@ -10,6 +10,10 @@ form input, button {
     border-color: #002147;
 }
 
+.number-input {
+    width: 5rem;
+}
+
 form input:active, button:active {
     
 }

@@ -1,7 +1,8 @@
 // DOM elements
 const item_Form = document.querySelector("#item-form");
 const item_List = document.querySelector(".items");
-const main_Input = document.querySelector("#item-form input");
+const main_Input = document.querySelector("#item-form input.string-input");
+const amount_Input = document.querySelector("#item-form input.number-input")
 
 let items = JSON.parse(localStorage.getItem("items")) || [];
 
@@ -20,16 +21,22 @@ if (localStorage.getItem("items")) {
 item_Form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const input_Value = main_Input.value ;
+    const input_name = main_Input.value;
+    const input_amount = amount_Input.value;
 
-    if (input_Value == "") {
-        return ;
+    if (input_name == "") {
+        return;
+    }
+
+    let item_amount = 0;
+    if (input_amount != "") {
+        item_amount = Number(input_amount);
     }
 
     const item = {
         id: new Date().getTime(),
-        name: input_Value,
-        amount: 0,
+        name: input_name,
+        amount: item_amount,
         is_In_Stock: true
     };
 
