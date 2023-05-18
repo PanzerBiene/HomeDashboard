@@ -60,8 +60,10 @@ item_List.addEventListener("click", (e) => {
     e.target.parentElement.classList.contains("remove-item") || 
     e.target.parentElement.parentElement.classList.contains("remove-item")) {
 
-        const item_Id = e.target.closest("li").id;
-        remove_Item(item_Id);
+        if (confirm("Are you sure you want to delete this item?")) {
+            const item_Id = e.target.closest("li").id;
+            remove_Item(item_Id);
+        }
     }
     else if (e.target.classList.contains("update-item") ||
     e.target.parentElement.classList.contains("update-item") || 
