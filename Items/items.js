@@ -2,7 +2,7 @@
 const item_Form = document.querySelector("#item-form");
 const item_List = document.querySelector(".items");
 const main_Input = document.querySelector("#item-form input.string-input");
-const amount_Input = document.querySelector("#item-form input.number-input")
+const amount_Input = document.querySelector("#item-form input.number-input");
 
 let items = JSON.parse(localStorage.getItem("items")) || [];
 

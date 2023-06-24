@@ -23,11 +23,11 @@ li {
     text-align: center;
 }
 
-.topnav {
+nav {
     overflow: hidden;
 }
 
-.topnav a {
+nav a {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -35,12 +35,12 @@ li {
     font-size: 17px;
 }
 
-.topnav a:hover {
+nav a:hover {
     background-color: #ddd;
     color: black;
   }
 
-.topnav a.active {
+nav a.active {
     background-color: #030d47;
     color: white;
   }
