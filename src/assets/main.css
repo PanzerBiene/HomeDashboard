@@ -1,0 +1,151 @@
+body{
+    background-color: #6bb9e8;
+    text-align: center;
+}
+
+header {
+    background-color: #27408b;
+    padding-bottom: 2rem;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+nav a.active {
+    background-color: #030d47;
+    color: white;
+  }
+
+
+form input, button {
+    background-color: #8aa8ac;
+    text-align: center;
+    color: #112233;
+    border-color: #002147;
+}
+
+
+li {
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+nav a.active {
+    background-color: #030d47;
+    color: white;
+  }
+
+
+form input, button {
+    background-color: #8aa8ac;
+    text-align: center;
+    color: #112233;
+    border-color: #002147;
+}
+
+.items {
+    margin-bottom: 4rem;
+}
+
+.items li {
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items li div {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+}
+
+.items li.out-of-stock {
+    background-color: grey;
+    text-decoration:underline;
+    color: ghostwhite;
+
+}
+
+.items li button {
+    border: 0;
+    padding: .25rem;
+    display: grid;
+    place-content: center;
+    background-color: transparent;
+}
+
+.items li button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.items li button svg path {
+    transition: 10ms;
+}
+
+.items li button:hover svg path {
+    stroke: black;
+}
+
+.items li button:active svg {
+    transform: scale(.8);
+}
+
+.items li span {
+    padding: 2px;
+    border-radius: 6px;
+    transition: 10ms;
+    background-color:white;
+    color: black;
+}
+
+.items li span:focus {
+    background-color:#d9d9d9;
+    outline: none;
+}
+
+.items li span[contenteditable]:hover {
+    background-color:#d9d9d9;
+}
