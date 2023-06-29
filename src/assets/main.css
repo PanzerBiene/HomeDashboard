@@ -3,14 +3,41 @@ body{
     text-align: center;
 }
 
-.number-input {
-    width: 5rem;
-}
-
 header {
     background-color: #27408b;
     padding-bottom: 2rem;
 }
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+nav a.active {
+    background-color: #030d47;
+    color: white;
+  }
+
+
+form input, button {
+    background-color: #8aa8ac;
+    text-align: center;
+    color: #112233;
+    border-color: #002147;
+}
+
 
 li {
     background-color: white;
@@ -51,11 +78,6 @@ form input, button {
     text-align: center;
     color: #112233;
     border-color: #002147;
-}
-
-span {
-    padding: 0;
-    margin: 0;
 }
 
 .items {
