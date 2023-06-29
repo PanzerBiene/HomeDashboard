@@ -53,6 +53,11 @@ form input, button {
     border-color: #002147;
 }
 
+span {
+    padding: 0;
+    margin: 0;
+}
+
 .items {
     margin-bottom: 4rem;
 }
