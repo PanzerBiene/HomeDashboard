@@ -7,7 +7,7 @@ export default{
     methods: {
         get_new_item() {
             let new_item = document.querySelectorAll(".item-input");
-            if(new_item[0].length > 0 || new_item[1] >= 0){
+            if(new_item[0].value.length > 0 || new_item[1].value >= 0){
                 return {name: new_item[0].value, amount: new_item[1].value};
             }
             return {};

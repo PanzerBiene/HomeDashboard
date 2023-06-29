@@ -5,7 +5,7 @@ import ItemList from '../components/Item_List.vue';
 const items = ref([{name: "Carrots", amount: 2}, {name: "Ice cream", amount: 1}]);
 
 function add_item_to_list(item) {
-    if(Object.entries(item) > 0) {
+    if(Object.entries(item).length > 0) {
         items.value.push({name: item.name, amount: item.amount});
     }
     else {
