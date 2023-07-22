@@ -3,6 +3,7 @@ import { Configuration, OpenAIApi } from "openai";
 
 export default{
     props: {
+        items: Array,
     },
     methods: {
         send_to_ai() {
