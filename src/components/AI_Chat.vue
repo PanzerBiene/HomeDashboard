@@ -1,13 +1,12 @@
 <script>
-import { Configuration, OpenAIApi } from "openai";
-
 export default{
     props: {
         items: Array,
     },
+    emits: ['SENDTOAI'],
     methods: {
-        send_to_ai() {
-            
+        get_messages() {
+            return ["test"];
         }
     }
 };
@@ -21,5 +20,5 @@ export default{
     </div>
     <label for="prompt">Your message: </label>
     <input type="text" id="prompt">
-    <button id="prompt-submit">Send</button>
+    <button id="prompt-submit" @click="$emit('SENDTOAI', get_messages())">Send</button>
 </template>
