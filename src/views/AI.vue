@@ -1,5 +1,5 @@
 <script setup>
-import Home_Stats from '../components/Home_Stats.vue';
+import ai_chat from '../components/AI_Chat.vue';
 
 const item_store = useItemsStore()
 const items = item_store.get_new_items;
@@ -7,7 +7,7 @@ const items = item_store.get_new_items;
 <template>
 
 <main>    
-    <Home_Stats :shopping_list_num=1 :items_in_list=2 :items_in_todo=3> </Home_Stats>
+    <ai_chat></ai_chat>
 </main>
 
 </template>
