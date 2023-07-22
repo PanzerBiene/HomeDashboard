@@ -1,5 +1,6 @@
 <script setup>
 import Home_Stats from '../components/Home_Stats.vue';
+import { useItemsStore } from '../stores/items.js';
 
 const item_store = useItemsStore()
 const items = item_store.get_new_items;
@@ -7,7 +8,7 @@ const items = item_store.get_new_items;
 <template>
 
 <main>    
-    <Home_Stats :shopping_list_num=1 :items_in_list=2 :items_in_todo=3> </Home_Stats>
+    <Home_Stats :items=items :shopping_list=[] :todo_list=[]> </Home_Stats>
 </main>
 
 </template>
