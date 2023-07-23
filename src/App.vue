@@ -10,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router';
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/items">Items</RouterLink>
         <RouterLink to="/chat">AI Chat</RouterLink>
+        <RouterLink to="/preferences">Preferences</RouterLink>
       </nav>
       <div class="container">
         <h1> 
