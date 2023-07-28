@@ -35,7 +35,7 @@ async function send_to_ai(messages) {
     };
     console.log(data);
     const response = await axios.post(url, data, config);
-    ai_messages_store.add_ai_message({role: "assistant", content: response.data.body})
+    ai_messages_store.add_ai_message({role: "assistant", content: response.data.body.slice(1,response.data.body.length-1)})
     console.log(response);
 }
 </script>
