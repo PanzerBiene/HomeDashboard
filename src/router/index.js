@@ -3,7 +3,7 @@ import Home from '../views/Home.vue';
 import Items from '../views/Items.vue';
 import AI from '../views/AI.vue';
 import Preferences from '../views/Preferences.vue';
-import Shopping_List from '../views/Shopping_List.vue';
+import Shopping_List from '../views/Shopping.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
