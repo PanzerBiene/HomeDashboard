@@ -25,7 +25,7 @@ export default{
         <ul>
             <li v-for="(ai_message, index) in ai_messages" :key="index">
                 <span>{{ ai_message.role }}</span>
-                <span>{{ ai_message.content }}</span>
+                <span style="white-space: pre-line">{{ ai_message.content.replace(/\\n|\\r\\n|\\n\\r|\\r/g, '\n') }}</span>
             </li>
         </ul>
     </div>
