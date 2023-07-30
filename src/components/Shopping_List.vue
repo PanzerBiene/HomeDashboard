@@ -3,7 +3,7 @@ export default{
     props: {
         shopping_list_items: Array,
     },
-    emits: ['add'],
+    emits: ['add', 'buy'],
     methods: {
         get_new_item() {
             let new_item = document.querySelectorAll(".item-input");
@@ -32,5 +32,6 @@ export default{
                     <span  contenteditable="true" id="amount">{{ item.amount}}</span>
                 </li>
             </ul>
+            <button @click="$emit('buy')">I've bought all these items</button>
         </section>
 </template>
