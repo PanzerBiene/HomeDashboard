@@ -2,7 +2,7 @@
 import ItemList from '../components/Item_List.vue';
 import { useItemsStore } from '../stores/items.js';
 const item_store = useItemsStore()
-const items = item_store.get_new_items;
+const items = item_store.get_items;
 
 function add_item_to_list(item) {
     if( item.name != undefined && item.name.length > 0 && item.amount != undefined && item.amount >= 0) {
