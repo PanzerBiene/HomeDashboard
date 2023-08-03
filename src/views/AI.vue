@@ -6,7 +6,7 @@ import { useAIMessagesStore } from '../stores/ai_messages';
 import axios from 'axios';
 
 const item_store = useItemsStore()
-const items = item_store.get_new_items;
+const items = item_store.get_items;
 
 const preferences_store = usePreferencesStore();
 const preferences = preferences_store.get_preferences;
@@ -35,6 +35,7 @@ async function send_to_ai(messages) {
     };
     console.log(data);
     const response = await axios.post(url, data, config);
+    console.log(response);
     ai_messages_store.add_ai_message({role: "assistant", content: response.data.body.slice(1,response.data.body.length-1)})
     console.log(response);
 }
