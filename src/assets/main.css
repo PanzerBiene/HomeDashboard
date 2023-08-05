@@ -11851,11 +11851,12 @@ textarea.form-control-lg {
   }
 }
 .bg-nav-grey {
-  background-color: #6C756B;
+  background-color: #253031;
 }
 
 .bg-home-body {
-  background-color: #A9D3FF;
+  color: #000000;
+  background-color: #2978A0;
 }
 
 /*# sourceMappingURL=main.css.map */

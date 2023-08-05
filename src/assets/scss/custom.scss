@@ -1,1 +1,16 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+$gunmetal: #253031;
+$darkslategrey: #315659;
+$cerulean: #2978A0;
+$ecru: #BCAB79;
+$columbiablue: #C6E0FF;
+
+.bg-nav-grey {
+    background-color: $gunmetal;
+}
+
+.bg-home-body {
+    color: #000000;
+    background-color: $cerulean;
+}
